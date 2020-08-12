@@ -35,6 +35,7 @@
 
     <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="./disable-try-it-out.js" charset="UTF-8"> </script>
     <script>
     window.onload = function() {
       // Begin Swagger UI call region
@@ -44,7 +45,8 @@
         deepLinking: true,
         presets: [
           SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset
+          SwaggerUIStandalonePreset,
+          DisableTryItOutWithoutServersPlugin
         ],
         plugins: [
           SwaggerUIBundle.plugins.DownloadUrl
